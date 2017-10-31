@@ -1,0 +1,75 @@
+/**
+ * Basic typography style for copy text
+ */
+
+h1,.heading1{
+    @include font-style("XXXSansWeb-Extrabold", 30px);
+}
+
+h2,.heading2{
+    @include font-style("XXXSansWeb-Bold", 22px);
+}
+
+h3,.heading3{
+    @include font-style("XXXSansWeb-Bold", 18px);
+}
+
+.body1{
+    @include font-style("XXXSansWeb-Medium", 16px);
+}
+
+.body2{
+    @include font-style("XXXSansWeb-Bold", 16px);
+}
+
+.body3{
+    @include font-style("XXXSansWeb-Bold", 14px);
+}
+
+.body4{
+    @include font-style("XXXSansWeb-Medium", 14px);
+}
+
+.body5{
+    @include font-style("XXXSansWeb-Medium", 12px);
+}
+
+.body6{
+    @include font-style("XXXSansWeb-Bold", 11px);
+}
+
+.body7{
+    @include font-style("XXXSansWeb-Medium", 13px);
+}
+
+.link1{
+    color: #1691E4;
+    &:hover{
+        color: #1171B1;
+        cursor: pointer;
+    }
+    &:active{
+        color: #094065;
+    }
+    &.inactive{
+        pointer-events: none;
+        cursor: none;
+        color: #BFBFBF;
+    }
+}
+
+.link2{
+    color: #707070;
+    &:hover{
+        color: #404040;
+        cursor: pointer;
+    }
+    &:active{
+        color: #404040;
+    }
+    &.inactive{
+        pointer-events: none;
+        cursor: none;
+        color: #BFBFBF;
+    }
+}

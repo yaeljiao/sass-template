@@ -1,0 +1,54 @@
+.blue-button{
+    width: 300px;
+    height: 48px;
+    border: none;
+    background-color: $blue;
+    color: $white;
+    font-family: "XXXSansWeb-Bold";
+    font-size: 16px;
+
+    &:hover{
+        background-color: $darkBlue;
+    }
+
+    &:active{
+        background-color: #094065;
+    }
+
+    &:disabled{
+        color: $disableTextGrey;
+        background-color: $disableGrey;
+        cursor: default;
+    }
+}
+
+.transparent-button{
+    width: 300px;
+    height: 48px;
+    border-radius: 0;
+    border:1px solid $blue;
+    background-color: $white;
+    color: $blue;
+    font-family: "XXXSansWeb-Bold";
+    font-size: 16px;
+
+    &:hover{
+        background-color: $white;
+        border: 1px solid $darkBlue;
+        cursor: pointer;
+        color: $darkBlue;
+    }
+
+    &:active{
+        background-color: #23608C;
+        border: 1px solid #1792E5;
+        color: $white;
+    }
+
+    &:disabled{
+        color: $disableTextGrey;
+        background-color: $disableGrey;
+        cursor: default;
+        color: $white;
+    }
+}

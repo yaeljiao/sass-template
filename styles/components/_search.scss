@@ -1,0 +1,17 @@
+.search-input {
+    float: left;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: none;
+    height: 30px;   // height match with search-btn
+    color: #A0A0A0;
+    font-family: 'XXXSansWeb-Medium';
+    font-size: 15px;
+}
+
+.search-btn {
+    @extend .sprite;
+    @extend .sprite-main-search-btn;
+    cursor: pointer;
+    display: inline-block;
+}

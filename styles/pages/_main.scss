@@ -1,0 +1,27 @@
+/**
+ * Main page use this template
+ */
+
+body {
+    min-width: 1200px;
+}
+
+#content{
+    height: 100%;
+}
+
+.component {
+    height: 100%;
+
+    .content {
+        min-height: calc(100% - 86px);  // minus the height of header
+        width: 100%;
+        display: table;
+    }
+
+    .content-inside {
+        display: table-cell;
+        padding: 50px 100px 100px+$footerHeight 100px;
+        background-color: #F8F8F8;
+    }
+}

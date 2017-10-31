@@ -1,0 +1,102 @@
+/**
+ * Header
+ */
+.hon-header{
+	width: 100%;
+	height: $headerHeight;
+	background-color: $white;
+	border-bottom: 1px solid #D0D0D0;
+	padding: 0 60px;
+    
+    .float-left {
+        float: left;
+    }
+    
+    .float-right {
+        float: right;
+    }
+
+    .header-block {
+        position: relative;
+        height:100%;
+
+        .header-logo {
+            @extend .sprite-icon-logo-small;
+        }
+
+        .vertical-center-block {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+        .need-support-link {
+            @extend .link2;
+            @extend .body1;
+            line-height: $headerHeight;
+            margin-right: 30px;
+        }
+
+        .user-dropdown {
+            display: inline-block;
+            list-style: none;
+            a {
+                @extend .body1;
+                @extend .link2;
+            }
+
+            .dropdown-menu {
+                @extend .sprite;
+                @extend .sprite-main-account-dropdown;
+                padding: 11px 5px 13px 11px;
+
+                // vertical align with dropdown symbol
+                position: absolute;
+                right: -25px;
+                top: 17px;
+
+                li{
+                    height: 43px;
+                }
+
+                // <li> hover behavior
+                li:hover{
+                    a{
+                        background-color: transparent;
+                        span{
+                            @extend .body3;
+                            color: #000000;
+                        }
+                    }
+                }
+
+                li.divider{
+                    width: 185px;
+                    height: 1px;
+                    margin: 0;
+                    color: #CFCFCF;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

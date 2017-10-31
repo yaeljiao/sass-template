@@ -1,0 +1,71 @@
+/**
+ * Login, changePassword, resetPassword pages use this template
+ */
+
+#content{
+    height:100%;
+}
+
+.component{
+    height:100%;
+    background: url($imageFolder + "login.jpg") bottom 90px left 60px/100% auto no-repeat;
+
+    .content{
+        min-height: 100%;
+        width: 100%;
+        display: table;
+
+        .content-inside{
+            padding-bottom: $footerHeight;
+            display: table-cell;
+            vertical-align: middle;
+
+            .header{
+                @extend .sprite-icon_logo_large;
+                width: $logoWidth;
+                height: $logoHeight;
+                margin: 0 auto 80px;
+            }
+
+            .form{
+                width: 400px;
+                margin: 0 auto;
+
+                .help-block{
+                    color: $warning;
+                    text-align: left;
+                    @extend .body4;
+                }
+
+                .form-control{
+                    box-sizing: border-box;
+                    width: 400px;
+                    height: 48px;
+                    border: 1px solid #B0B0B0;
+                    padding-left: 20px;
+                    margin: 10px 0;
+                    background-color: transparent;
+                }
+
+                .button{
+                    @extend .blue-button;
+                    width: 400px;
+                }
+
+                .button-left{
+                    @extend .transparent-button;
+                    float: left;
+                    width: 190px;
+
+                }
+
+                .button-right{
+                    @extend .blue-button;
+                    float: right;
+                    width: 190px;
+                }
+            }
+        }
+    }
+}
+

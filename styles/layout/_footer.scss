@@ -1,0 +1,43 @@
+/**
+ * Footer
+ */
+.hon-footer{
+    height: $footerHeight;
+    margin-top: -$footerHeight;
+
+    background-color: $footerBackground;
+    padding: 20px 32px;
+
+    .footer-left{
+        line-height: $footerHeight - 40px;
+        display: inline-block;
+    }
+
+    .footer-right{
+        line-height: $footerHeight - 40px;
+        display: inline-block;
+        float: right;
+    }
+
+    .text{
+        color: $white;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .separator{
+        @extend .text;
+        margin:0 3px;
+    }
+
+    .link{
+        @extend .text;
+
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+
