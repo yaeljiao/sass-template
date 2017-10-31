@@ -1,5 +1,5 @@
 # Sass-template
-​	使用Sass进行样式编写能够结构化的管理所有样式文件，最终通过`@import`语法引入到主样式文件上。从而增强样式文件的可读性、维护性。
+​	使用Sass进行样式编写能够结构化的管理所有样式文件，从而增强样式文件的可读性、维护性。
 
 
 
@@ -10,46 +10,46 @@
 ```
 styles/
 |
-|-- base/				   # 包含整个项目最基本的基础样式
-|	|-- _reset.scss			# 或者_normalize.scss
-|	|-- _typography.scss	 # 排版样式
-|	|-- _base.scss			# 一些通用的html标签的样式，比如<body/>, <a/>
+|-- base/                     # 包含整个项目最基本的基础样式
+|	|-- _reset.scss             # 或者_normalize.scss
+|	|-- _typography.scss        # 排版样式
+|	|-- _base.scss              # 一些通用的html标签的样式，比如<body/>, <a/>
 |   …
 |
-|-- components/				# 基础组件
-|   |-- _buttons.scss      	  # 按钮
-|   |-- _search.scss       	  # 搜索按钮
+|-- components/               # 基础组件
+|   |-- _buttons.scss         # 按钮
+|   |-- _search.scss          # 搜索按钮
 |   …
 |
 |-- helpers/
-|   |-- _variables.scss    	  # Sass Variables
-|   |-- _functions.scss    	  # Sass Functions
-|   |-- _mixins.scss       	  # Sass Mixins
+|   |-- _variables.scss       # Sass Variables
+|   |-- _functions.scss       # Sass Functions
+|   |-- _mixins.scss          # Sass Mixins
 |   …
 |
 |-- layouts/
-|   |-- _header.scss       	  # Header
-|   |-- _footer.scss       	  # Footer
+|   |-- _header.scss          # Header
+|   |-- _footer.scss          # Footer
 |   |-- _sidebar.scss         # Sidebar
 |   …
 |
 |-- pages/
-|   |– _admin.scss         	  # admin页面的特殊样式
-|   |– _login.scss         	  # login页面的特殊样式
-|   |– _main.scss          	  # main页面的特殊样式
+|   |– _admin.scss            # admin页面的特殊样式
+|   |– _login.scss            # login页面的特殊样式
+|   |– _main.scss             # main页面的特殊样式
 |   …
 |
 |– themes/
-|   |– _theme.scss        	  # 默认主题
+|   |– _theme.scss            # 默认主题
 |   …
 |
-|-- vendor/               	  # 来自第三方的CSS或Sass文件，比如Bootstrap, jQuery
+|-- vendor/                   # 来自第三方的CSS或Sass文件，比如Bootstrap, jQuery
 |   |-- _hon-dls.min.scss
 |   |-- _loadMask.scss    
-|   |-- _react-bootstrap-table.min.css # 当然可以包含css文件
+|   |-- _react-bootstrap-table.min.css 
 |   …
 |
-`-- main.scss            	  # 主Sass文件放在最外层目录下
+`-- main.scss                 # 主Sass文件放在最外层目录下
 `-- admin.scss
 `-- login.scss
 `-- changePwd.scss
