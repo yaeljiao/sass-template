@@ -85,7 +85,7 @@ styles/
 @import "layout/header";
 @import "layout/footer";
 
-@import "pages/_main";
+@import "pages/main";
 ```
 
 
